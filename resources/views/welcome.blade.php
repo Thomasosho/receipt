@@ -146,7 +146,7 @@
         <div class="container">
 
     <div class="">
-        <!-- ngView:  --><div ng-view="" class="ng-scope"><form name="invoiceForm" class="ng-pristine ng-scope ng-invalid ng-invalid-required">
+    <div ng-view="" class="ng-scope"><form name="invoiceForm" class="ng-pristine ng-scope ng-invalid ng-invalid-required">
 	<div class="invoice-holder clearfix">
 		<div class="mobile-btns">
 			<div class="inner">
@@ -213,11 +213,11 @@
 			<div class="invoice">
 				<div class="two-col clearfix">
 					<div class="title">
-						<input class="form-control input-label ng-pristine ng-untouched ng-valid" ng-model="invoice.header" tabindex="10">
+						<input class="form-control input-label ng-pristine ng-untouched ng-valid" ng-model="invoice.header" tabindex="10" value="INVOICE">
 						<div class="subtitle">
 							<div class="input-group">
 								<span class="input-group-addon">#</span>
-								<input class="form-control ng-pristine ng-untouched ng-valid" tabindex="11" ng-model="invoice.number">
+								<input class="form-control ng-pristine ng-untouched ng-valid" tabindex="11" ng-model="invoice.number" value="3">
 							</div>
 						</div>
 					</div>
@@ -279,28 +279,28 @@
 
 					<div class="col invoice-details">
 						<div class="input-group addon-input">
-							<input class="input-label form-control ng-pristine ng-untouched ng-valid" ng-model="invoice.date_title" tabindex="20">
+							<input class="input-label form-control ng-pristine ng-untouched ng-valid" ng-model="invoice.date_title" tabindex="20" value="Date">
 							<div class="input-group-addon">
-								<input class="form-control datepicker date ng-pristine ng-untouched ng-valid hasDatepicker" ng-model="invoice.date" tabindex="21" date-picker="" id="dp1638891295709">
+								<input class="form-control datepicker date ng-pristine ng-untouched ng-valid hasDatepicker" ng-model="invoice.date" tabindex="21" type="date">
 							</div>
 						</div>
 
 						<div class="input-group addon-input">
-							<input class="input-label form-control ng-pristine ng-untouched ng-valid" ng-model="invoice.payment_terms_title" tabindex="22">
+							<input class="input-label form-control ng-pristine ng-untouched ng-valid" ng-model="invoice.payment_terms_title" tabindex="22" value="Payment Terms">
 							<div class="input-group-addon">
 								<input class="form-control ng-pristine ng-untouched ng-valid" ng-model="invoice.payment_terms" tabindex="23">
 							</div>
 						</div>
 
 						<div class="input-group addon-input">
-							<input class="input-label form-control ng-pristine ng-untouched ng-valid" ng-model="invoice.due_date_title" tabindex="24">
+							<input class="input-label form-control ng-pristine ng-untouched ng-valid" ng-model="invoice.due_date_title" tabindex="24" value="Due Date">
 							<div class="input-group-addon">
 								<input class="form-control datepicker due-date ng-pristine ng-untouched ng-valid hasDatepicker" ng-model="invoice.due_date" tabindex="25" date-picker="" id="dp1638891295710">
 							</div>
 						</div>
 
 						<div class="input-group addon-input">
-							<input class="input-label form-control ng-pristine ng-untouched ng-valid" ng-model="invoice.purchase_order_title" tabindex="26">
+							<input class="input-label form-control ng-pristine ng-untouched ng-valid" ng-model="invoice.purchase_order_title" tabindex="26" value="PO Number">
 							<div class="input-group-addon">
 								<input class="form-control ng-pristine ng-untouched ng-valid" ng-model="invoice.purchase_order" tabindex="27">
 							</div>
@@ -364,7 +364,7 @@
 					<div class="col footer">
 						<div class="notes-holder">
 							<div class="field">
-								<input class="input-label form-control ng-pristine ng-untouched ng-valid" ng-model="invoice.notes_title" tabindex="1014">
+								<input class="input-label form-control ng-pristine ng-untouched ng-valid" ng-model="invoice.notes_title" tabindex="1014" value="Notes">
 							</div>
 							<div class="value">
 								<div class="expandingText" style="position: relative;"><textarea class="notes form-control ng-pristine ng-untouched ng-valid expanding-init" placeholder="Notes - any relevant information not already covered" ng-model="invoice.notes" tabindex="1015" expanding-textarea="" style="position: absolute; height: 100%; resize: none;"></textarea><pre class="textareaClone" style="visibility: hidden; border: 1px solid; white-space: pre-wrap; line-height: 20px; text-decoration: none solid rgb(49, 53, 56); font-size: 14px; font-family: NeueHaasUnica, Helvetica, Arial, sans-serif; word-break: normal; padding: 6px 12px; margin-bottom: 0px; position: relative;"><div> </div><div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre></div>
@@ -372,7 +372,7 @@
 						</div>
 						<div class="terms-holder">
 							<div class="field">
-								<input class="input-label form-control ng-pristine ng-untouched ng-valid" ng-model="invoice.terms_title" tabindex="1016">
+								<input class="input-label form-control ng-pristine ng-untouched ng-valid" ng-model="invoice.terms_title" tabindex="1016" value="Terms">
 							</div>
 							<div class="value">
 								<div class="expandingText" style="position: relative;"><textarea class="terms form-control ng-pristine ng-untouched ng-valid expanding-init" placeholder="Terms and conditions - late fees, payment methods, delivery schedule" ng-model="invoice.terms" tabindex="1017" expanding-textarea="" style="position: absolute; height: 100%; resize: none;"></textarea><pre class="textareaClone" style="visibility: hidden; border: 1px solid; white-space: pre-wrap; line-height: 20px; text-decoration: none solid rgb(49, 53, 56); font-size: 14px; font-family: NeueHaasUnica, Helvetica, Arial, sans-serif; word-break: normal; padding: 6px 12px; margin-bottom: 0px; position: relative;"><div> </div><div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre></div>
@@ -381,7 +381,7 @@
 					</div>
 					<div class="col rates">
 						<div class="input-group addon-input">
-							<input class="input-label form-control ng-pristine ng-untouched ng-valid" ng-model="invoice.subtotal_title" tabindex="1001">
+							<input class="input-label form-control ng-pristine ng-untouched ng-valid" ng-model="invoice.subtotal_title" tabindex="1001" value="subtotal">
 							<div class="input-group-addon value deleteable ng-binding" ng-bind-html="invoice.subtotal|currencyFormat:invoice.currency">$0.00</div>
 						</div>
 
@@ -393,7 +393,23 @@
 							</div>
 							<input class="input-label form-control ng-pristine ng-untouched ng-valid" ng-model="invoice.discounts_title" tabindex="1002">
 							<div class="input-group-addon input deleteable">
-								<div input-amount="" is-rate="discountIsRate" currency="invoice.currency" ng-model="invoice.discounts" ng-tabindex="1003" has-selector="true" class="ng-pristine ng-untouched ng-valid ng-isolate-scope"><div class="input-amount dropdown with-selector" ng-class="{'is-percent':!!isRate,'with-selector':hasSelector}"><div class="addon currency-sign ng-binding">$</div><input class="form-control ng-pristine ng-untouched ng-valid ng-valid-required" type="number" step="any" autocomplete="off" tabindex="1003" ng-required="ngRequired" ng-model="value" ng-change="change()"><div class="addon percent">%</div><div class="addon selector"><button type="button" class="btn dropdown-toggle" aria-haspopup="true" aria-expanded="false"><span class="fas fa-chevron-down"></span></button></div><ul class="dropdown-menu dropdown-menu-right"><li ng-class="{active:!isRate}" class="active"><a href="#" ng-click="isRate=false;$event.preventDefault()" class="ng-binding">Flat ($)</a></li><li ng-class="{active:isRate}"><a href="#" ng-click="isRate=true;$event.preventDefault()">Percent (%)</a></li></ul></div></div>
+								<div input-amount="" is-rate="discountIsRate" currency="invoice.currency" ng-model="invoice.discounts" ng-tabindex="1003" has-selector="true" class="ng-pristine ng-untouched ng-valid ng-isolate-scope">
+									<div class="input-amount dropdown with-selector" ng-class="{'is-percent':!!isRate,'with-selector':hasSelector}"><div class="addon currency-sign ng-binding">$</div>
+									<input class="form-control ng-pristine ng-untouched ng-valid ng-valid-required" type="number" step="any" autocomplete="off" tabindex="1003" ng-required="ngRequired" ng-model="value" ng-change="change()">
+									<div class="addon percent">%</div>
+									<div class="addon selector">
+										<button type="button" class="btn dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+											<span class="fas fa-chevron-down"></span></button></div>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li ng-class="{active:!isRate}" class="active">
+													<a href="#" ng-click="isRate=false;$event.preventDefault()" class="ng-binding">Flat ($)</a>
+												</li>
+												<li ng-class="{active:isRate}">
+													<a href="#" ng-click="isRate=true;$event.preventDefault()">Percent (%)</a>
+												</li>
+											</ul>
+										</div>
+									</div>
 							</div>
 						</div>
 
@@ -403,7 +419,7 @@
 									<span class="fas fa-times"></span>
 								</button>
 							</div>
-							<input class="input-label form-control ng-pristine ng-untouched ng-valid" ng-model="invoice.tax_title" tabindex="1004">
+							<input class="input-label form-control ng-pristine ng-untouched ng-valid" ng-model="invoice.tax_title" tabindex="1004" value="Tax">
 							<div class="input-group-addon input deleteable">
 								<div input-amount="" is-rate="taxIsRate" currency="invoice.currency" ng-model="invoice.tax" ng-tabindex="1005" has-selector="true" class="ng-pristine ng-untouched ng-valid ng-isolate-scope"><div class="input-amount dropdown is-percent with-selector" ng-class="{'is-percent':!!isRate,'with-selector':hasSelector}"><div class="addon currency-sign ng-binding">$</div><input class="form-control ng-pristine ng-untouched ng-valid ng-valid-required" type="number" step="any" autocomplete="off" tabindex="1005" ng-required="ngRequired" ng-model="value" ng-change="change()"><div class="addon percent">%</div><div class="addon selector"><button type="button" class="btn dropdown-toggle" aria-haspopup="true" aria-expanded="false"><span class="fas fa-chevron-down"></span></button></div><ul class="dropdown-menu dropdown-menu-right"><li ng-class="{active:!isRate}"><a href="#" ng-click="isRate=false;$event.preventDefault()" class="ng-binding">Flat ($)</a></li><li ng-class="{active:isRate}" class="active"><a href="#" ng-click="isRate=true;$event.preventDefault()">Percent (%)</a></li></ul></div></div>
 							</div>
@@ -415,7 +431,7 @@
 									<span class="fas fa-times"></span>
 								</button>
 							</div>
-							<input class="input-label form-control ng-pristine ng-untouched ng-valid" ng-model="invoice.shipping_title" tabindex="1006">
+							<input class="input-label form-control ng-pristine ng-untouched ng-valid" ng-model="invoice.shipping_title" tabindex="1006" value="Shipping">
 							<div class="input-group-addon input deleteable">
 								<div input-amount="" is-rate="false" currency="invoice.currency" ng-model="invoice.shipping" ng-tabindex="1007" class="ng-pristine ng-untouched ng-valid ng-isolate-scope"><div class="input-amount dropdown" ng-class="{'is-percent':!!isRate,'with-selector':hasSelector}"><div class="addon currency-sign ng-binding">$</div><input class="form-control ng-pristine ng-untouched ng-valid ng-valid-required" type="number" step="any" autocomplete="off" tabindex="1007" ng-required="ngRequired" ng-model="value" ng-change="change()"><div class="addon percent">%</div><div class="addon selector"><button type="button" class="btn dropdown-toggle" aria-haspopup="true" aria-expanded="false"><span class="fas fa-chevron-down"></span></button></div><ul class="dropdown-menu dropdown-menu-right"><li ng-class="{active:!isRate}" class="active"><a href="#" ng-click="isRate=false;$event.preventDefault()" class="ng-binding">Flat ($)</a></li><li ng-class="{active:isRate}"><a href="#" ng-click="isRate=true;$event.preventDefault()">Percent (%)</a></li></ul></div></div>
 							</div>
@@ -437,19 +453,38 @@
 						</div>
 
 						<div class="input-group addon-input">
-							<input class="input-label form-control ng-pristine ng-untouched ng-valid" ng-model="invoice.total_title" tabindex="1011">
+							<input class="input-label form-control ng-pristine ng-untouched ng-valid" ng-model="invoice.total_title" tabindex="1011" value="Total">
 							<div class="input-group-addon value deleteable ng-binding" ng-bind-html="invoice.total|currencyFormat:invoice.currency">$0.00</div>
 						</div>
 
 						<div class="input-group addon-input">
-							<input class="input-label form-control ng-pristine ng-untouched ng-valid" ng-model="invoice.amount_paid_title" tabindex="1012">
+							<input class="input-label form-control ng-pristine ng-untouched ng-valid" ng-model="invoice.amount_paid_title" tabindex="1012" value="Amount Paid">
 							<div class="input-group-addon input deleteable">
-								<div input-amount="" currency="invoice.currency" ng-model="invoice.amount_paid" ng-tabindex="1013" class="ng-pristine ng-untouched ng-valid ng-isolate-scope"><div class="input-amount dropdown" ng-class="{'is-percent':!!isRate,'with-selector':hasSelector}"><div class="addon currency-sign ng-binding">$</div><input class="form-control ng-pristine ng-untouched ng-valid ng-valid-required" type="number" step="any" autocomplete="off" tabindex="1013" ng-required="ngRequired" ng-model="value" ng-change="change()"><div class="addon percent">%</div><div class="addon selector"><button type="button" class="btn dropdown-toggle" aria-haspopup="true" aria-expanded="false"><span class="fas fa-chevron-down"></span></button></div><ul class="dropdown-menu dropdown-menu-right"><li ng-class="{active:!isRate}" class="active"><a href="#" ng-click="isRate=false;$event.preventDefault()" class="ng-binding">Flat ($)</a></li><li ng-class="{active:isRate}"><a href="#" ng-click="isRate=true;$event.preventDefault()">Percent (%)</a></li></ul></div></div>
+								<div input-amount="" currency="invoice.currency" ng-model="invoice.amount_paid" ng-tabindex="1013" class="ng-pristine ng-untouched ng-valid ng-isolate-scope">
+									<div class="input-amount dropdown" ng-class="{'is-percent':!!isRate,'with-selector':hasSelector}">
+										<div class="addon currency-sign ng-binding">$</div>
+										<input class="form-control ng-pristine ng-untouched ng-valid ng-valid-required" type="number" step="any" autocomplete="off" tabindex="1013" ng-required="ngRequired" ng-model="value" ng-change="change()">
+										<div class="addon percent">%</div>
+										<div class="addon selector">
+											<button type="button" class="btn dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+												<span class="fas fa-chevron-down"></span>
+											</button>
+										</div>
+										<ul class="dropdown-menu dropdown-menu-right">
+											<li ng-class="{active:!isRate}" class="active">
+												<a href="#" ng-click="isRate=false;$event.preventDefault()" class="ng-binding">Flat ($)</a>
+											</li>
+											<li ng-class="{active:isRate}">
+												<a href="#" ng-click="isRate=true;$event.preventDefault()">Percent (%)</a>
+											</li>
+										</ul>
+									</div>
+								</div>
 							</div>
 						</div>
 
 						<div class="input-group addon-input">
-							<input class="input-label form-control ng-pristine ng-untouched ng-valid" ng-model="invoice.balance_title" tabindex="1014">
+							<input class="input-label form-control ng-pristine ng-untouched ng-valid" ng-model="invoice.balance_title" tabindex="1014" value="Balance Due">
 							<div class="input-group-addon value deleteable ng-binding" ng-bind-html="invoice.balance|currencyFormat:invoice.currency">$0.00</div>
 						</div>
 					</div>
